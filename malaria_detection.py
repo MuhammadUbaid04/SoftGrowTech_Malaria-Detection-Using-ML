@@ -65,7 +65,9 @@ area_2 = float(input("area_2: "))
 area_3 = float(input("area_3: "))
 area_4 = float(input("area_4: "))
 
-sample = [[area_0, area_1, area_2, area_3, area_4]]
+sample = pd.DataFrame(
+    [[area_0, area_1, area_2, area_3, area_4]],columns=["area_0", "area_1", "area_2", "area_3", "area_4"]
+)
 
 prediction = model.predict(sample)
 
